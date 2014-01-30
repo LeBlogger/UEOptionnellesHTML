@@ -12,78 +12,56 @@
 
       <div class="jumbotron0" style="padding: 10px 20px; margin-top: 5px;">
       
-      <!-- Button trigger modal -->
-      	
-      	<h2>Gestion des étudiants</h2>
-      	
-      	<p><button class="FR btn btn-primary btn-sm btn-success" data-toggle="modal" data-target="#modalAjouterEtudiant">
-  Ajouter un nouvel Etudiant
-</button></p>
-      	
+      <form class="form-horizontal" role="form">
+      		<h2 class="form-signin-heading">Gestion des parcours</h2>
+      		<p>Choisir un parcours pour afficher la liste des UE</p>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Choisir un parcours : </label>
+			<div class="col-sm-10">
+				<select class="form-control">
+					<option value="7">Master 1 2IBS</option>
+					<option value="6">Master 1 ISRI</option>
+					<option value="5">Master 1 MIAGE</option>
+					<option value="8">Master 2 2IBS INFO</option>
+					<option value="9">Master 2 2IBS INSTRUM</option>
+					<option value="4">Master 2 ISRI</option>
+					<option value="3">Master 2 MIAGE 2COM</option>
+					<option value="1">Master 2 MIAGE OSIE</option>
+					<option value="2">Master 2 MIAGE SIS</option>
+				</select>
+			</div>
+		</div>
+		  		 
+		  <button type="submit" class="btn btn-primary btn-sm btn-success">Afficher</button>
+		</form>
+      
       	<table class="table table-condensed table-hover" style="background : #FFF; margin-top:15px;">
         <thead>
           <tr class="active">
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Année</th>
-            <th>Login</th>
-            <th>Email</th>
-            <th>Actif</th>
-            <th>Actions</th>
+            <th>Intitulé de l'UE</th>
+            <th>Type</th>
           </tr>
         </thead>
         <tbody>
 	        <tr>
-		       <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
-		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#modalVoirEtudiant"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#modalModifierEtudiant"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#modalSupprimerEtudiant"> </a>
-		        </td>
+		       <td>M1.11 - Administration des Systèmes d'exploitation MIAGE</td>
+		        <td>obligatoire</td>
 		    </tr>
 		    <tr>
-		        <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
-		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#myModalVoirE"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#myModalModifierE"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#myModalSupprimerE"> </a>
-		        </td>
+		       <td>M1.11 - Administration des Systèmes d'exploitation MIAGE</td>
+		        <td>Optionnelle</td>
 		    </tr>
 		    <tr>
-		        <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
-		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#myModalVoirE"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#myModalModifierE"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#myModalSupprimerE"> </a>
-		        </td>
+		       <td>M1.11 - Administration des Systèmes d'exploitation MIAGE</td>
+		        <td>obligatoire</td>
 		    </tr>
 		    <tr>
-		        <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
-		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#myModalVoirE"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#myModalModifierE"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#myModalSupprimerE"> </a>
-		        </td>
+		       <td>M1.11 - Administration des Systèmes d'exploitation MIAGE</td>
+		        <td>obligatoire</td>
+		    </tr>
+		    <tr>
+		       <td>M1.11 - Administration des Systèmes d'exploitation MIAGE</td>
+		        <td>obligatoire</td>
 		    </tr>
         </tbody>
       </table>
@@ -103,5 +81,6 @@
 <?php echo $modalVoirEtudiant; ?>
 <?php echo $modalModifierEtudiant; ?>
 <?php echo $modalSupprimerEtudiant; ?>
+<?php echo $modalProfil; ?>
 
 <?php echo $footerScripts; ?> 

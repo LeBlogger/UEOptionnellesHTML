@@ -10,27 +10,57 @@ $header = '<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/styles.css?v=12220" rel="stylesheet">
+    
   </head>';
 
 
 $adminHeader1 = '<div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="#" data-toggle="modal" data-target="#myModalContact"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
-          <li><a href="/"><span class="glyphicon glyphicon-off"></span>  Déconnexion (Soufiane)</a></li>
-        </ul>
+<div class="btn pull-right">
+<div class="btn-group">
+  <button type="button" class="btn btn-default btn-sm">Soufiane</button>
+  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#" data-toggle="modal" data-target="#modalProfil">Mon profil</a></li>
+    <li class="divider"></li>
+    <li><a href="/">Déconexion</a></li>
+  </ul>
+  </div>
+</div>
+
+<div class="btn pull-right">
+  <a type="button" class="btn btn-default btn-sm" href="#" data-toggle="modal" data-target="#myModalContact"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
+</div>
         <h3 class="text-muted">Inscriptions pédagogiques</h3>
       </div>';
 
 $adminHeader2 = '<div class="header">
-        <ul class="nav nav-pills pull-right">
-        <li><a class="admin" href="/Admin.php"><span class="glyphicon glyphicon-cog"></span> Administration</a></li>
-          <li><a href="/"><span class="glyphicon glyphicon-off"></span> Déconnexion (Soufiane)</a></li>
-        </ul>
+        <!-- Split button -->
+<div class="btn pull-right">
+<div class="btn-group">
+  <button type="button" class="btn btn-default btn-sm">Soufiane</button>
+  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#" data-toggle="modal" data-target="#modalProfil">Mon profil</a></li>
+    <li class="divider"></li>
+    <li><a href="/">Déconexion</a></li>
+  </ul>
+  </div>
+</div>
+
+<div class="btn pull-right">
+  <a type="button" class="btn btn-default btn-sm" href="/admin.php"> Demandes inscription <span class="label label-info">42</span> </a>
+</div>
         <h3 class="text-muted">Inscriptions pédagogiques</h3>
       </div>';
 
@@ -80,6 +110,7 @@ Les champs annotés de un astérisque * doivent être remplis.</p>
 
 $footer = '<div class="footer">
         <p class="FL">&copy; UPJV 2013</p>
+        <p class="FR"> Etudiants UPJV en MIAGE : Soufiane - Alphousseynou - Sara - Alicia - Abdelmouaine</p>
       </div>';
       
       
@@ -134,16 +165,13 @@ $modalCreerEtudiant = '<!-- Modal -->
 Les champs annotés d une astérisque * doivent être remplis.</p>
 		  <div class="form-group">
 		    <label>Nom : </label>
-		    <input type="text" class="form-control" placeholder="Nom">
+		    <input type="text" class="form-control" placeholder="Nom" required>
 		  </div>
 		  <div class="form-group">
 		    <label>Prénom : </label>
-		    <input type="text" class="form-control" placeholder="Prénom">
+		    <input type="text" class="form-control" placeholder="Prénom" required>
 		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Adresse email : </label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrer votre adresse email">
-		  </div>
+		  
 		  <div class="form-group">
 		  <label>Choisir un parcours : </label>
 <select class="form-control">
@@ -160,19 +188,25 @@ Les champs annotés d une astérisque * doivent être remplis.</p>
 		  </div>
 		  
 		  <div class="form-group">
+		    <label for="exampleInputEmail1">Adresse email : </label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrer votre adresse email" required>
+		  </div>
+		  
+		  
+		  <div class="form-group">
 		    <label>Identifiant : </label>
-		    <input type="text" class="form-control" placeholder="Identifiant">
+		    <input type="text" class="form-control" placeholder="Identifiant" required>
 		  </div>
 		  
 		  <div class="form-group">
 		    <label>Mot de passe : </label>
-		    <input type="text" class="form-control" placeholder="Mot de passe">
+		    <input type="text" class="form-control" placeholder="Mot de passe" required>
 		  </div>
 		  
 		  
 		  <div class="form-group">
 		    <label>Confirmer mot de passe : </label>
-		    <input type="text" class="form-control" placeholder="Mot de passe">
+		    <input type="text" class="form-control" placeholder="Mot de passe" required>
 		  </div>
 		 
 		  <button type="submit" class="btn btn-default" >Envoyer</button>
@@ -196,15 +230,15 @@ $modalAjouterEtudiant = '<!-- Modal -->
 Les champs annotés d une astérisque * doivent être remplis.</p>
 		  <div class="form-group">
 		    <label>Nom : </label>
-		    <input type="text" class="form-control" placeholder="Nom" >
+		    <input type="text" class="form-control" placeholder="Nom" required >
 		  </div>
 		  <div class="form-group">
 		    <label>Prénom : </label>
-		    <input type="text" class="form-control" placeholder="Prénom">
+		    <input type="text" class="form-control" placeholder="Prénom" required>
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleInputEmail1">Adresse email : </label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrer votre adresse email">
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrer votre adresse email" required>
 		  </div>
 		  <div class="form-group">
 		  <label>Choisir un parcours : </label>
@@ -251,12 +285,14 @@ $modalAdmin = '<!-- Modal -->
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       <form class="smallModel form-signin">
         <h2 class="form-signin-heading">Connexion</h2>
-        <input type="text" class="form-control" placeholder="Identifiant" required autofocus>
-        <input type="Mot de passe" class="form-control" placeholder="Mot de passe" required>
+        <p><input type="text" class="form-control" placeholder="Identifiant" required autofocus></p>
+        <p><input type="Mot de passe" class="form-control" placeholder="Mot de passe" required></p>
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Sauvegarder
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick=window.location="/recapChoix.php">Se connecter</button>
+        <p><button class="btn btn-lg btn-primary btn-block" type="submit" onclick=window.location="/recapChoix.php">Se connecter</button>
+        <a href="#">Mot de passe oublié</a>
+        </p>
       </form>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -304,6 +340,37 @@ $modalVoirEtudiant = '<!-- Modal -->
 		</tr>
 </tbody>
       </table>
+      
+      <table class="table table-bordered table-hover">
+        <tbody>
+        <tr>
+        	<th>UE Optionnelle 1 </th>
+        	<td>Anglais 1</td>
+        </tr>
+        <tr class="even">
+        	<th>UE Optionnelle 2</th>
+        	<td>Web</td>
+        </tr>
+        <tr class="odd">
+        	<th>UE Optionnelle 3</th>
+        	<td>Droit</td>
+        </tr>
+        <tr>
+        	<th>UE Obligatoire 1 </th>
+        	<td>Anglais 1</td>
+        </tr>
+        <tr class="even">
+        	<th>UE Obligatoire 2</th>
+        	<td>Web</td>
+        </tr>
+        <tr class="odd">
+        	<th>UE Obligatoire 3</th>
+        	<td>Droit</td>
+        </tr>
+		
+</tbody>
+      </table>
+      
       </div>
       <div class="modal-footer">
       <p><button class="btn btn-warning btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#modalModifierEtudiant">Modifier</button>
@@ -367,6 +434,30 @@ $modalModifierEtudiant = '<!-- Modal -->
 <option value="2" selected>Non</option>
 </select>
 		  </div>
+		  
+		  <div class="form-group">
+		  <label>UE Optionnelle 1 : </label>
+<select class="form-control">
+<option value="1">Anglais</option>
+<option value="2" selected>Web</option>
+</select>
+		  </div>
+		  
+		  <div class="form-group">
+		  <label>UE Optionnelle 2 : </label>
+<select class="form-control">
+<option value="1">Anglais</option>
+<option value="2" selected>Web</option>
+</select>
+		  </div>
+		  
+		  <div class="form-group">
+		  <label>UE Optionnelle 3 : </label>
+<select class="form-control">
+<option value="1">Anglais</option>
+<option value="2" selected>Web</option>
+</select>
+		  </div>
 		 
 		  <button type="submit" class="btn btn-success" >Valider</button>
 		  <button type="submit" class="btn btn-warning" >Annuler</button>
@@ -378,6 +469,42 @@ $modalModifierEtudiant = '<!-- Modal -->
 
 $modalSupprimerEtudiant = '<!-- Modal -->
 <div class="modal fade" id="modalSupprimerEtudiant" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Veillez confirmer la suppression de l etudiant Souf Lam de la base</h2>
+      	<button type="submit" class="btn btn-danger" >Confirmer</button>
+		  <button type="submit" class="btn btn-default" >Annuler</button>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->';
+
+$modalProfil = '<!-- Modal -->
+<div class="modal fade" id="modalProfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Veillez confirmer la suppression de l etudiant Souf Lam de la base</h2>
+      	<button type="submit" class="btn btn-danger" >Confirmer</button>
+		  <button type="submit" class="btn btn-default" >Annuler</button>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->';
+
+$modalEmail = '<!-- Modal -->
+<div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h2>Veillez confirmer la suppression de l etudiant Souf Lam de la base</h2>
+      	<button type="submit" class="btn btn-danger" >Confirmer</button>
+		  <button type="submit" class="btn btn-default" >Annuler</button>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->';
+
+$modalEmailListe = '<!-- Modal -->
+<div class="modal fade" id="modalEmailListe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

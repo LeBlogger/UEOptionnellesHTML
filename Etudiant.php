@@ -32,39 +32,40 @@ echo $header;?>
         
         <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">15/32</span>
 		    </label>
 		  </div>
         <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">29/32</span>
+
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">29/32</span>
+
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">29/32</span>
+
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">29/32</span>
+
 		    </label>
 		  </div>
 		  <button type="submit" class="btn btn-default">Envoyer</button>
       </form>
-      
-		
-        
       </div>
     </div>
   </div>  
@@ -84,32 +85,32 @@ echo $header;?>
         
         <div class="checkbox">
 		    <label>
-		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
         <div class="checkbox">
 		    <label>
-		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox has-success">
 		    <label>
-		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox has-success">
 		    <label>
-		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox has-success">
 		    <label>
-		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
 		  <button data-toggle="modal" data-target="#myModalChoixUE" type="submit" class="btn btn-default">Modifier</button>
@@ -191,32 +192,32 @@ echo $header;?>
         
         <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
 		    </label>
 		  </div>
         <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">29/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox has-success">
 		    <label>
-		      <input type="checkbox" checked> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" checked> M2.36 - Outils pour la Business Intelligence <span class="badge">30/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox has-success">
 		    <label>
-		      <input type="checkbox" checked> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" checked> M2.36 - Outils pour la Business Intelligence <span class="badge">30/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox"> M2.36 - Outils pour la Business Intelligence <span class="badge">30/32</span>
 		    </label>
 		  </div>
 		  <div class="checkbox has-success">
 		    <label>
-		      <input type="checkbox" checked> M2.36 - Outils pour la Business Intelligence
+		      <input type="checkbox" checked> M2.36 - Outils pour la Business Intelligence <span class="badge">30/32</span>
 		    </label>
 		  </div>
 		  <button type="submit" class="btn btn-default">Envoyer</button>
@@ -224,5 +225,8 @@ echo $header;?>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<?php echo $modalProfil; ?>
+<?php echo $modalContact;?>
 
 <?php echo $footerScripts; ?>
