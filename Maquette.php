@@ -13,7 +13,6 @@
       <div class="jumbotron0" style="padding: 10px 20px; margin-top: 5px;">
       
       <form class="form-horizontal" role="form">
-      		<h2 class="form-signin-heading">Gestion des parcours</h2>
       		<p>Choisir un parcours pour afficher la liste des UE</p>
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Choisir un parcours : </label>

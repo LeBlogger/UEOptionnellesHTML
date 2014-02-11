@@ -14,10 +14,10 @@
       
       <!-- Button trigger modal -->
       	
-      	<h2>Gestion des étudiants</h2>
+      	<h2>Gestion des Spécialités</h2>
       	
       	<p><button class="FR btn btn-primary btn-sm btn-success" data-toggle="modal" data-target="#modalAjouterEtudiant">
-  Ajouter un nouvel Etudiant
+  Ajouter une nouvelle spécialité
 </button></p>
       	
       	<table class="table table-condensed table-hover" style="background : #FFF; margin-top:15px;">

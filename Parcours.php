@@ -14,75 +14,85 @@
       
       <!-- Button trigger modal -->
       	
-      	<h2>Gestion des étudiants</h2>
+      	<h2>Gestion des Parcours</h2>
       	
       	<p><button class="FR btn btn-primary btn-sm btn-success" data-toggle="modal" data-target="#modalAjouterEtudiant">
-  Ajouter un nouvel Etudiant
+  Ajouter un nouvel Parcours
 </button></p>
       	
       	<table class="table table-condensed table-hover" style="background : #FFF; margin-top:15px;">
         <thead>
           <tr class="active">
-            <th>Nom</th>
-            <th>Prénom</th>
+            <th>Intitulé</th>
             <th>Année</th>
-            <th>Login</th>
-            <th>Email</th>
-            <th>Actif</th>
-            <th>Actions</th>
+            <th>Début Choix S1</th>
+            <th>Fin Choix S1</th>
+            <th>Début Choix S2</th>
+            <th>Fin Choix S2</th>
+            <th>Nb Options S1</th>
+            <th>Nb Options S2</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
 	        <tr>
-		       <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
+		       <td>Master 2 MIAGE OSIE</td>
+            <td>2</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2</td>
+            <td>3</td>
 		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#modalVoirEtudiant"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#modalModifierEtudiant"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#modalSupprimerEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations" href="#" data-toggle="modal" data-target="#modalVoirEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-edit" title="Modifier" href="#" data-toggle="modal" data-target="#modalModifierEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-trash" title="Supprimer" href="#" data-toggle="modal" data-target="#modalSupprimerEtudiant"> </a>
 		        </td>
 		    </tr>
 		    <tr>
-		        <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
+		       <td>Master 2 MIAGE OSIE</td>
+            <td>2</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2</td>
+            <td>3</td>
 		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#myModalVoirE"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#myModalModifierE"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#myModalSupprimerE"> </a>
+		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations" href="#" data-toggle="modal" data-target="#modalVoirEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-edit" title="Modifier" href="#" data-toggle="modal" data-target="#modalModifierEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-trash" title="Supprimer" href="#" data-toggle="modal" data-target="#modalSupprimerEtudiant"> </a>
 		        </td>
 		    </tr>
 		    <tr>
-		        <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
+		       <td>Master 2 MIAGE OSIE</td>
+            <td>2</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2</td>
+            <td>3</td>
 		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#myModalVoirE"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#myModalModifierE"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#myModalSupprimerE"> </a>
+		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations" href="#" data-toggle="modal" data-target="#modalVoirEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-edit" title="Modifier" href="#" data-toggle="modal" data-target="#modalModifierEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-trash" title="Supprimer" href="#" data-toggle="modal" data-target="#modalSupprimerEtudiant"> </a>
 		        </td>
 		    </tr>
 		    <tr>
-		        <td>Souf</td>
-		        <td>Lam</td>
-		        <td>M2 MIAGE OSIE</td>
-		        <td>Soufiane</td>
-		        <td>contact@soufiane.fr</td>
-		        <td>1</td>
+		       <td>Master 2 MIAGE OSIE</td>
+            <td>2</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2013-09-16</td>
+            <td>2</td>
+            <td>3</td>
 		        <td>
-		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations sur cet étudiant" href="#" data-toggle="modal" data-target="#myModalVoirE"> </a>
-		        	<a class="glyphicon glyphicon-edit" title="Modifier cet étudiant" href="#" data-toggle="modal" data-target="#myModalModifierE"> </a>
-		        	<a class="glyphicon glyphicon-trash" title="Supprimer cet étudiant" href="#" data-toggle="modal" data-target="#myModalSupprimerE"> </a>
+		        	<a class="glyphicon glyphicon-search" title="Voir plus d'informations" href="#" data-toggle="modal" data-target="#modalVoirEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-edit" title="Modifier" href="#" data-toggle="modal" data-target="#modalModifierEtudiant"> </a>
+		        	<a class="glyphicon glyphicon-trash" title="Supprimer" href="#" data-toggle="modal" data-target="#modalSupprimerEtudiant"> </a>
 		        </td>
 		    </tr>
         </tbody>

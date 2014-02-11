@@ -8,6 +8,7 @@ $header = '<!DOCTYPE html>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
@@ -60,6 +61,24 @@ $adminHeader2 = '<div class="header">
 
 <div class="btn pull-right">
   <a type="button" class="btn btn-default btn-sm" href="/admin.php"> Demandes inscription <span class="label label-info">42</span> </a>
+</div>
+        <h3 class="text-muted">Inscriptions pédagogiques</h3>
+      </div>';
+$adminHeaderEnseignant = '<div class="header">
+        <!-- Split button -->
+<div class="btn pull-right">
+<div class="btn-group">
+  <button type="button" class="btn btn-default btn-sm">Enseignant</button>
+  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#" data-toggle="modal" data-target="#modalProfil">Mon profil</a></li>
+    <li class="divider"></li>
+    <li><a href="/">Déconexion</a></li>
+  </ul>
+  </div>
 </div>
         <h3 class="text-muted">Inscriptions pédagogiques</h3>
       </div>';
@@ -119,9 +138,9 @@ $adminMenu = ' <div class="">
 			<li><a class="recapChoix" href="/recapChoix.php">Choix</a></li>
 			<li><a class="emargements" href="/Emargements.php">Feuilles émargement</a></li>
 			<li><a class="etudiants" href="/Etudiants.php">Etudiants</a></li>
+			<li><a class="parcours" href="/Parcours.php">Parcours</a></li>
 			<li><a class="maquette" href="/Maquette.php">Maquette</a></li>
 			<li><a class="ue" href="/UE.php">UEs</a></li>
-			<li><a class="parcours" href="/Parcours.php">Années</a></li>
 			<li><a class="specialites" href="/Specialites.php">Spécialités</a></li>
         </ul>
       </div>';
@@ -496,9 +515,33 @@ $modalEmail = '<!-- Modal -->
   <div class="modal-dialog">
     <div class="modal-content">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h2>Veillez confirmer la suppression de l etudiant Souf Lam de la base</h2>
-      	<button type="submit" class="btn btn-danger" >Confirmer</button>
-		  <button type="submit" class="btn btn-default" >Annuler</button>
+      <form class="form-horizontal" role="form">
+      <h2 class="form-signin-heading">Envoyer un email aux étudiants suivant UE Anglais</h2>
+      		<p>Veuillez compléter le formulaire suivant pour envoyer un email groupé à tous les étudiants de UE Anglais.</p><p>Vous pouvez envoyer ce message à des adresses email personnalisées</p>
+
+		  <div class="form-group">
+		    <label class="col-sm-4 control-label">Email additionnels</label>
+		    <div class="col-sm-8">
+			    <input type="text" class="form-control" placeholder="Entrer des emails séparés par des virgules">
+		    </div>
+		  </div>
+		  
+		  <div class="form-group">
+		    <label class="col-sm-4 control-label">Objet :</label>
+		    <div class="col-sm-8">
+		    	<input type="text" class="form-control" placeholder="Sujet de votre email">
+		    </div>
+		  </div>
+		  
+		  <div class="form-group">
+		  
+		  <label class="col-sm-4 control-label">Message</label>
+		  <div class="col-sm-8">
+		  <textarea class="form-control" rows="3"></textarea>
+		  </div>
+		  </div>
+		  <button type="submit" class="btn btn-default" >Envoyer</button>
+		</form>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->';
@@ -508,9 +551,20 @@ $modalEmailListe = '<!-- Modal -->
   <div class="modal-dialog">
     <div class="modal-content">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h2>Veillez confirmer la suppression de l etudiant Souf Lam de la base</h2>
-      	<button type="submit" class="btn btn-danger" >Confirmer</button>
-		  <button type="submit" class="btn btn-default" >Annuler</button>
+      <form class="form-horizontal" role="form">
+      <h2 class="form-signin-heading">Envoyer un email aux étudiants suivant UE Anglais</h2>
+      		<p>Veuillez compléter le formulaire suivant pour envoyer un email groupé à tous les étudiants de UE Anglais.</p><p>Vous pouvez envoyer ce message à des adresses email personnalisées</p>
+
+		  
+		  <div class="form-group">
+		  
+		  <label class="col-sm-4 control-label">Message</label>
+		  <div class="col-sm-8">
+		  <textarea class="form-control" rows="3" value="contact@soufiane.fr; contact@soufiane.fr;"></textarea>
+		  </div>
+		  </div>
+		  <button type="submit" class="btn btn-default" >Envoyer</button>
+		</form>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->';
