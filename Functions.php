@@ -12,12 +12,20 @@ $header = '<!DOCTYPE html>
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/styles.css?v=12220" rel="stylesheet">
     
-  </head>';
+    <link rel="stylesheet" href="css/bootstrap-3.0.3.min.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
+
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-3.0.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+    
+    </head>';
 
 
 $adminHeader1 = '<div class="header">
@@ -579,9 +587,6 @@ $Pagination = '<div class="TAC"><ul class="pagination">
   <li><a href="#">&raquo;</a></li>
 </ul></div>';
 
-$footerScripts = '<!-- jQuery (necessary for Bootstrap s JavaScript plugins) -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+$footerScripts = '
   </body>
 </html>';

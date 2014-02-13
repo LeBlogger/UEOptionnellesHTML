@@ -9,7 +9,7 @@ echo $header;?>
   		<?php echo $adminHeader1;?>
   		
       <div class="jumbotron">
-      	<p>Bonjour Soufiane Lamchaouri.</p> <p>Cette application va vous permettre de choisir les UE Optionnelles pour la deuxième annèe du master MIAGE</p>
+      	<p>Bonjour <strong>Soufiane Lamchaouri</strong>.</p> <p>Cette application va vous permettre de choisir les UE Optionnelles pour la deuxième annèes du master MIAGE</p>
         
 	<div class="panel-group" id="accordion">
 	
@@ -80,40 +80,14 @@ echo $header;?>
     <div id="collapse2" class="panel-collapse collapse">
       <div class="panel-body">
       <form class="form-signin" role="form">
-        <p>Choix ouverts du 16/09/2013 au 06/10/2013</p>
         <p>Choix fait le 20/09/2013</p>
-        
-        <div class="checkbox">
-		    <label>
-		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
-		    </label>
-		  </div>
-        <div class="checkbox">
-		    <label>
-		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
-		    </label>
-		  </div>
-		  <div class="checkbox has-success">
-		    <label>
-		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
-		    </label>
-		  </div>
-		  <div class="checkbox has-success">
-		    <label>
-		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
-		    </label>
-		  </div>
-		  <div class="checkbox">
-		    <label>
-		      <input type="checkbox" disabled> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
-		    </label>
-		  </div>
-		  <div class="checkbox has-success">
-		    <label>
-		      <input type="checkbox" disabled checked> M2.36 - Outils pour la Business Intelligence <span class="badge">32/32</span>
-		    </label>
-		  </div>
-		  <button data-toggle="modal" data-target="#myModalChoixUE" type="submit" class="btn btn-default">Modifier</button>
+        <ul>
+        	<li>M2.36 - Outils pour la Business Intelligence</li>
+        	<li>M2.36 - Outils pour la Business Intelligence</li>
+        	<li>M2.36 - Outils pour la Business Intelligence</li>
+        </ul>
+		<p>Choix ouverts du 16/09/2013 au 06/10/2013</p>
+		<button data-toggle="modal" data-target="#myModalChoixUE" type="submit" class="btn btn-default">Modifier</button>     
       </form>
       </div>
     </div>

@@ -11,7 +11,7 @@
       <?php echo $adminMenu;?>
 
       <div class="jumbotron0" style="padding: 10px 20px; margin-top: 5px;">
-      
+     
       <form class="form-horizontal" role="form">
       		<h2 class="form-signin-heading">Feuilles d'emargement</h2>
       		<p>Veuillez selectionner un parcours (spécialité et année) puis une Unité d'enseignement pour voir la liste des étudiants dans cette UE.</p><p>
@@ -37,10 +37,15 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Choisir une UE : </label>
 			<div class="col-sm-10">
-				<select class="form-control">
-					<option value="7"></option>
-					<option value="7">M1.2 Anglais</option>
-					<option value="7">M1.2 Anglais</option>
+				<select class="form-control multiselect" multiple="multiple">
+					<option value="1">M1.1 Anglais</option>
+					<option value="2">M1.2 Anglais</option>
+					<option value="3">M1.3 Anglais</option>
+					<option value="4">M1.4 Anglais</option>
+					<option value="5">M1.5 Anglais</option>
+					<option value="6">M1.6 Anglais</option>
+					<option value="7">M1.7 Anglais</option>
+					<option value="8">M1.8 Anglais</option>
 				</select>
 			</div>
 		</div>
@@ -63,5 +68,27 @@
 <?php echo $modalProfil; ?>
 <?php echo $modalEmail; ?>
 <?php echo $modalEmailListe	; ?>
+
+<!-- Initialize the plugin: -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.multiselect').multiselect({
+      numberDisplayed: 10,
+      includeSelectAllOption: true,
+      selectAllValue: 'all',
+      selectAllText: 'Tous selectionner',
+      enableFiltering: true,
+      buttonTitle: function(options, select) {
+        var selected = 'bbbbb';
+        options.each(function () {
+          selected += $(this).text() + ', ';
+        });
+        return selected.substr(0, selected.length - 2);
+      },
+      
+      
+    });
+  });
+</script>
 
 <?php echo $footerScripts; ?>
