@@ -11,7 +11,7 @@
       <div class="jumbotron0" style="padding: 10px 20px; margin-top: 5px;">
       
       <form class="form-horizontal" role="form">
-      		<h2 class="form-signin-heading">Feuilles d'emargement</h2>
+      		<h2 class="form-signin-heading">Feuilles d'emargements</h2>
       		<p>Veuillez selectionner un parcours (spécialité et année) puis une Unité d'enseignement pour voir la liste des étudiants dans cette UE.</p><p>
 	      		Vous pouvez laisser le champs UE vide pour avoir la liste de tous les étudiants du parcous toutes UE confondues
       		</p>
