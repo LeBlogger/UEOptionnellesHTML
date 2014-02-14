@@ -25,7 +25,7 @@ echo $header;?>
     <div id="collapseOne" class="panel-collapse collapse.in in">
       <div class="panel-body">
       <form class="form-signin" role="form">
-        <p>Selectionnez 2 UE optionnelles dans la liste ci-dessousssss.</p>
+        <p>Selectionnez 2 22 UE optionnelles dans la liste ci-dessousssss.</p>
         <p>Vous avez jusqu'au 06/10/2013 réaliser ou modifier vos choix</p>
        
         
