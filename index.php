@@ -11,7 +11,9 @@
         </ul>
         <h3 class="text-muted"><a href="/Etudiant.php">Inscriptions pédagogiques</a></h3>
       </div>
-
+	
+	Text Local Sara
+	
       <div class="jumbotron">
         <h1>Master STIC - Spécialités ISRI, MIAGE et 2IBS
         <p class="lead">Cette application permet aux étudiants du Master STIC - ISRI, MIAGE et 2IBS de choisir leurs UE optionnelles</p>
