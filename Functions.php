@@ -24,6 +24,19 @@ $header = '<!DOCTYPE html>
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-3.0.3.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+		
+		<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0-beta.1/css/jquery.dataTables.css">
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.0-beta.1/js/jquery.dataTables.js"></script>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/505bef35b56/integration/bootstrap/3/dataTables.bootstrap.css">
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/plug-ins/505bef35b56/integration/bootstrap/3/dataTables.bootstrap.css"></script>
+
     
     </head>';
 
@@ -560,18 +573,14 @@ $modalEmailListe = '<!-- Modal -->
     <div class="modal-content">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       <form class="form-horizontal" role="form">
-      <h2 class="form-signin-heading">Envoyer un email aux étudiants suivant UE Anglais</h2>
-      		<p>Veuillez compléter le formulaire suivant pour envoyer un email groupé à tous les étudiants de UE Anglais.</p><p>Vous pouvez envoyer ce message à des adresses email personnalisées</p>
-
+      <h2 class="form-signin-heading">Liste des emails des étudiants qui suivent l UE Anglais</h2>
 		  
 		  <div class="form-group">
 		  
-		  <label class="col-sm-4 control-label">Message</label>
-		  <div class="col-sm-8">
-		  <textarea class="form-control" rows="3" value="contact@soufiane.fr; contact@soufiane.fr;"></textarea>
+		  <div class="col-sm-12">
+		  <textarea class="form-control" rows="10">alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com>alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com>, alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com>, alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com>, alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com>, alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com>, alicia mpassi <alicia.mpassi@gmail.com>, Sara Mchichou <mchichou.sara@gmail.com></textarea>
 		  </div>
 		  </div>
-		  <button type="submit" class="btn btn-default" >Envoyer</button>
 		</form>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
