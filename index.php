@@ -15,6 +15,9 @@
 	Text Local Sara
 	
       <div class="jumbotron">
+
+      textLocalSouf
+
         <h1>Master STIC - Spécialités ISRI, MIAGE et 2IBS
         <p class="lead">Cette application permet aux étudiants du Master STIC - ISRI, MIAGE et 2IBS de choisir leurs UE optionnelles</p>
         <p>Pour choisir vos UEs optionnelles vous devez :</p>
