@@ -16,7 +16,7 @@
 	
       <div class="jumbotron">
 
-      textLocal2Souf
+      textLocal23Souf
 
         <h1>Master STIC - Spécialités ISRI, MIAGE et 2IBS
         <p class="lead">Cette application permet aux étudiants du Master STIC - ISRI, MIAGE et 2IBS de choisir leurs UE optionnelles</p>
