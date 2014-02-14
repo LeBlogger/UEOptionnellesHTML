@@ -13,7 +13,7 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Master STIC - Spécialités ISRIMIAGELocal, MIAGE et 2IBS
+        <h1>Master STIC - Spécialités ISRI, MIAGE et 2IBS
         <p class="lead">Cette application permet aux étudiants du Master STIC - ISRI, MIAGE et 2IBS de choisir leurs UE optionnelles</p>
         <p>Pour choisir vos UEs optionnelles vous devez :</p>
         <ol>
